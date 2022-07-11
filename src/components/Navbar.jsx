@@ -82,19 +82,13 @@ const Navbar = () => {
               <Stack direction="row">
                 {isAuthenticated ? (
                   <>
-                    <IconButton>
-                      <LogoutIcon
-                        onClick={() => logout()}
-                        sx={{ color: "white" }}
-                      />
+                    <IconButton onClick={() => logout()}>
+                      <LogoutIcon sx={{ color: "white" }} />
                     </IconButton>
                   </>
                 ) : (
-                  <IconButton>
-                    <LoginIcon
-                      onClick={() => loginWithRedirect()}
-                      sx={{ color: "white" }}
-                    />
+                  <IconButton onClick={() => loginWithRedirect()}>
+                    <LoginIcon sx={{ color: "white" }} />
                   </IconButton>
                 )}
 
