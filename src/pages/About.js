@@ -3,7 +3,6 @@ import { crew } from "../crew";
 import { Container, Box, Typography, IconButton, Button } from "@mui/material";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 const About = () => {
   const [index, setIndex] = useState(0);
   const { image, job, name, text } = crew[index];
